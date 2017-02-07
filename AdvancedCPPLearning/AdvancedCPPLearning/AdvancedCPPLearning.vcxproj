@@ -112,8 +112,10 @@
   <ItemGroup>
     <ClCompile Include="Source.cpp" />
     <ClCompile Include="threadtest.cpp" />
+    <ClCompile Include="STLtest.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="STLtest.h" />
     <ClInclude Include="threadtest.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

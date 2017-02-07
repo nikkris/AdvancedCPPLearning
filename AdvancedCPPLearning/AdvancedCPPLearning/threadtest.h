@@ -17,7 +17,7 @@ extern int i;
 extern int a;
 
 
-void threaddemo();
+void threadDemo();
 void makeACallFromPhoneBooth(int, int);
 void makeACallFromPhoneBooth2(int, int *);
 

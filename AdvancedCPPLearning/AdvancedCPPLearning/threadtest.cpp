@@ -5,7 +5,7 @@ std::mutex m;//you can use std::lock_guard if you want to be exception safe
 int i = 0;
 int a = 5;
 
-void threaddemo()
+void threadDemo()
 {
 	//This is the main crowd of people uninterested in making a phone call
 	int b = 5;
