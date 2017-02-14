@@ -24,12 +24,24 @@
     <ClCompile Include="STLtest.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="linearlinkedlist.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="graph.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="threadtest.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="STLtest.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="graph.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="linearlinkedlist.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
