@@ -10,9 +10,9 @@ class adjacencyNode
 	int srce_id;					//source node (redundant information if used with graphNode)
 	int dest_id;					//destination node
 	float edge_wt;					//edge weight from base to this node;
-	adjacencyNode* next;			//points to another neighbor of srce_id
-
+	
 public:
+	adjacencyNode* next;			//points to another neighbor of srce_id
 
 	adjacencyNode(int,int, float);	//constructor
 	~adjacencyNode();				//destructor (default)
@@ -31,11 +31,14 @@ class graphNode
 	adjacencyNode* neighbors;				//List of neighbors to the current node
 
 public:
+	graphNode();
 	graphNode(int);							//Constructor
 	~graphNode();							//Destructor
 	T getData();							//Get data
 	void setData(T data);					//Set data
 	adjacencyNode* getHeadNeighbor();		//Get head of neighbors 
+	void setNullHeadNeighbor();
+	void setHeadNeighbor(adjacencyNode*);	//Set head of neighbors 
 	void InsertNeighbor(int, int, float);	//Insert a new neighbor at the head of neighbor
 };
 
@@ -49,8 +52,9 @@ public:
 	~intGraph();							// Destrutor
 	int createGraph(int);					// Create graph with V nodes
 	int insertNode(int);					// Insert a vertex with given nodeId
-	int insertLink(int, int, float);    // Insert an edge in the given vertex in the graph
+	int insertLink(int, int, float);	    // Insert an edge in the given vertex in the graph
 	int deleteNode(int);					// Delete a node with given nodeId
+	int deleteLink(int, int);				// Delete a link given the srce and dest node ids
 	int displayAdj();						// Display the adjacency list of the graph
 	int displayNodes();						// Display the nodes present in the graph
 };
